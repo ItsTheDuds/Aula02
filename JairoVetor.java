@@ -6,17 +6,17 @@ public class JairoVetor {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Quantos alunos tem na sala de aula: ");
-        int qtdAlunos = sc.nextInt();
+        int qtdAlunos = Integer.parseInt(sc.nextLine());
         System.out.println();
-        sc.nextLine();
 
-        String[] nomes = new String[qtdAlunos];
-        int[] idades = new int[qtdAlunos];
+        String nomes[] = new String[qtdAlunos];
+        int idades[] = new int[qtdAlunos];
 
         for (int i = 0; i < qtdAlunos; i++) {
-            System.out.println("Qual nome do aluno?");
+            System.out.printf("Qual nome do aluno da posição %d: ", (i+1));
             nomes[i] = sc.nextLine();
-            System.out.println("Qual idade do aluno?");
+
+            System.out.printf("Qual idade do aluno da posição %d: ", (i+1));
             idades[i] = sc.nextInt();
             sc.nextLine();
 
