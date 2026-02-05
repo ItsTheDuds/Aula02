@@ -13,8 +13,6 @@ public class JairoVetor {
         String[] nomes = new String[qtdAlunos];
         int[] idades = new int[qtdAlunos];
 
-        int[] alunos = new int [qtdAlunos];
-
         for (int i = 0; i < qtdAlunos; i++) {
             System.out.println("Qual nome do aluno?");
             nomes[i] = sc.nextLine();
@@ -26,7 +24,7 @@ public class JairoVetor {
         }
 
         for (int i = 0; i < qtdAlunos; i++) {
-            System.out.println("NOME DO ALUNO: " + nomes[i] + " - " + idades[i] + "ANOS");
+            System.out.println("NOME DO ALUNO: " + nomes[i] + " - " + idades[i] + " ANOS");
         }
 
         sc.close();
